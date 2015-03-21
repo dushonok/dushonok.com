@@ -1,4 +1,3 @@
-RewriteOptions inherit
 
 # BEGIN WPSuperCache
 <IfModule mod_rewrite.c>
