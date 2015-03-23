@@ -14,3 +14,6 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+
+
+$avia_config['imgSize']['entry_with_sidebar'] 	= array('width'=>845, 'height'=>321);		            	// big images for blog and page entries
