@@ -18,8 +18,8 @@ a.small-preview {
    height: 180px;
 }
 
-/* Magazine Layout, 1st image is bigger */
-
+/* Magazine Layout, 1st image is bigger - NOT WORKING*/
+/*
 .av-magazine-thumbnail {
    width: 100px;
    height: 100px;
@@ -28,3 +28,4 @@ a.small-preview {
 .av-magazine-thumbnail {
    height: 215px;
 }
+*/
