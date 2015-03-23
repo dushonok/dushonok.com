@@ -29,3 +29,9 @@ a.small-preview {
    height: 215px;
 }
 */
+
+/* Etsy Mini, hiding ugly links on bottom - DOES NOYT WORK*/
+
+div#listing-container a {
+   visibility: hidden;
+}
