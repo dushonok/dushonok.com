@@ -11,3 +11,20 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
+
+/* Blog Posts, single author, small previews */
+a.small-preview {
+   width: 180px;
+   height: 180px;
+}
+
+/* Magazine Layout, 1st image is bigger */
+
+.av-magazine-thumbnail {
+   width: 100px;
+   height: 100px;
+}
+
+.av-magazine-thumbnail {
+   height: 215px;
+}
