@@ -15,5 +15,14 @@ function theme_enqueue_styles() {
     );
 }
 
+// big images for blog and page entries
+$avia_config['imgSize']['entry_with_sidebar'] 	= array('width'=>845, 'height'=>321);		            	
 
-$avia_config['imgSize']['entry_with_sidebar'] 	= array('width'=>845, 'height'=>321);		            	// big images for blog and page entries
+
+// Excerpt  for Masonry
+add_filter('avf_masonry_excerpt_length','avf_increase_masonry_excerpt_length', 10, 1);
+
+function avf_increase_masonry_excerpt_length($prepare_excerpt) {
+	$prepare_excerpt = 200;
+	return $prepare_excerpt;
+}
