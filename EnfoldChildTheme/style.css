@@ -55,5 +55,26 @@ div.comment span.comment-excerpt {
     font-size: smaller;
     color: black;
 }
+h3.widgettitle {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    font-size: smaller;
+    color: gray;
+    padding-left: 15px;
+}
 
-/**/
+/*Enfold Tab widget with Recent, Popular, Comment*/
+/* - keep only Popular*/
+.tab.widget_tab_comments {
+    display: none;
+}
+.tab.widget_tab_recent {
+    display: none;
+}
+.tab.first_tab.active_tab.widget_tab_popular.tab_counter_0 {
+    border-bottom-color: #e1e1e1;
+    text-transform: uppercase;
+}
+
+/*  */
