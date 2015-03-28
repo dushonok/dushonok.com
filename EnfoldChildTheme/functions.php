@@ -26,3 +26,11 @@ function avf_increase_masonry_excerpt_length($prepare_excerpt) {
 	$prepare_excerpt = 200;
 	return $prepare_excerpt;
 }
+
+// Excerpt  for Slider
+add_filter('avf_postgrid_excerpt_length','avf_increase_postgrid_excerpt_length', 10, 1);
+
+function avf_increase_postgrid_excerpt_length($prepare_excerpt) {
+	$prepare_excerpt = 150;
+	return $prepare_excerpt;
+}
