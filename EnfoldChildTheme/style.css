@@ -45,14 +45,14 @@ div.container.template-blog.template-single-blog article .big-preview.single-big
 
 /* Decent comments, links, excerpts */
 div.comment span.comment-link {
-   font-size: smaller;
+   font-size: 11px;
 }
 div.comment span.comment-link a {
    font-weight: bold;
 }
 div.comment span.comment-excerpt {
     font-weight: bold;
-    font-size: smaller;
+    font-size: 11px;
     color: black;
 }
 h3.widgettitle {
