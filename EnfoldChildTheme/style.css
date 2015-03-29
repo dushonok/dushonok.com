@@ -82,4 +82,11 @@ header.av_header_transparency li[class*="social_bookmarks_"] a {
     color: white;
 }
 
-/*  */
+
+/* Make pop-up menu transparent */
+
+header.av_header_transparency .sub-menu, 
+header.av_header_transparency .sub-menu * { 
+    background: transparent !important; 
+    color: white !important;
+}
