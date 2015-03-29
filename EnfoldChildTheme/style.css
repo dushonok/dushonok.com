@@ -84,9 +84,13 @@ header.av_header_transparency li[class*="social_bookmarks_"] a {
 
 
 /* Make pop-up menu transparent */
+/* Change the top border of transparent pop-up menu to white */
 
 header.av_header_transparency .sub-menu, 
 header.av_header_transparency .sub-menu * { 
     background: transparent !important; 
     color: white !important;
+    border-top-color: white  !important;
 }
+
+/*  */
