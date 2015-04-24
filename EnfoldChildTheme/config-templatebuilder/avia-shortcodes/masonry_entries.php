@@ -732,6 +732,8 @@ if ( !class_exists( 'avia_masonry' ) )
 				$this->loop[$key]['thumb_ID'] 		= get_post_thumbnail_id($id);
 				$this->loop[$key]['the_title'] 		= get_the_title($id);
 				$this->loop[$key]['url']			= get_permalink($id);
+				$commentCount = get_comments_number($entry->ID);
+                $this->loop[$key]['comment']            = "<div class='av-masonry-comment meta-color'>Comments: {$commentCount}</div>";
 				$this->loop[$key]['date'] 			= "<span class='av-masonry-date meta-color updated'>".get_the_time($date_format, $id)."</span>";
 				$this->loop[$key]['author'] 		= "<span class='av-masonry-author meta-color vcard author'><span class='fn'>". __('by','avia_framework') .' '. $author."</span></span>";
 				$this->loop[$key]['class'] 			= get_post_class("av-masonry-entry isotope-item", $id); 
@@ -751,6 +753,7 @@ if ( !class_exists( 'avia_masonry' ) )
 					$post_format 		= get_post_format($id) ? get_post_format($id) : 'standard';
 					$this->loop[$key]	= apply_filters( 'post-format-'.$post_format, $this->loop[$key] );
 					$this->loop[$key]['text_after'] .= $this->loop[$key]['date'];
+					$this->loop[$key]['text_after'] .= $this->loop[$key]['comment'];
 					$this->loop[$key]['text_after'] .= '<span class="av-masonry-text-sep text-sep-author">/</span>';
 					$this->loop[$key]['text_after'] .= $this->loop[$key]['author'];
 					
@@ -968,8 +971,6 @@ if ( !class_exists( 'avia_masonry' ) )
 		}
 	}
 }
-
-
 
 
 
