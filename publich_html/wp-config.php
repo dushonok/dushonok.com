@@ -55,7 +55,7 @@ define('NONCE_SALT',       'qpQUp@JyoMbt)4uIv/y:@g<>sg><RleUDx7PL:l2w8ddeKpQ>d!_
 
 /**#@-*/
 define('AUTOSAVE_INTERVAL', 600 );
-define('WP_POST_REVISIONS', 1);
+//define('WP_POST_REVISIONS', 1);
 define( 'WP_CRON_LOCK_TIMEOUT', 120 );
 define( 'WP_AUTO_UPDATE_CORE', true );
 /**
